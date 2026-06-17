@@ -4,6 +4,7 @@ python-multipart
 requests
 beautifulsoup4
 tld
+tldextract
 scikit-learn
 xgboost
 pandas

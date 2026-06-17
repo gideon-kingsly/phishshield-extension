@@ -3,7 +3,7 @@ uvicorn[standard]>=0.15.0
 python-multipart
 requests
 beautifulsoup4
-tldextract
+tld
 scikit-learn
 xgboost
 pandas

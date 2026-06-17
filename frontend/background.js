@@ -412,7 +412,7 @@ async function checkForPhishing(url, tabId, isReload = false) {
     }
 
     // Check URL using our ML model
-    const response = await fetch("https://your-app.onrender.com/predict_url", {
+    const response = await fetch("https://phishshield-extension.onrender.com/predict_url", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -537,7 +537,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     // 🔥 This is the new part for Pre-click warning
     (async () => {
       try {
-        const response = await fetch("https://your-app.onrender.com/predict_url", {
+        const response = await fetch("https://phishshield-extension.onrender.com/predict_url", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ url: request.url })
